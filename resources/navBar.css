@@ -1,0 +1,99 @@
+/* common style to all sections */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+/* navBar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: #0d3451;
+    opacity: 0.9;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+.nav-links a {
+    color: white;
+}
+    
+    /* logo */
+    .logo {
+        font-size: 20px;
+        font-weight:700;
+        color: #fff;
+    }
+    
+    /* navBar menu */
+    .menu {
+        display: flex;
+        font-size: 15px;
+        font-weight:500;
+    }
+    .menu li:hover {
+         background-color: white;
+        color: #0d3451;
+        transition: 0.1s ease;
+    }
+    .menu li > a:hover {
+        color: #0d3451;
+    }
+    .menu li {
+        padding: 5px 14px;
+        /* color: #fff; */
+    }
+    
+/*responsive navBar menu*/
+
+/* hamBurger button functionality */
+
+input[type=checkbox]{
+    display: none;
+} 
+
+/*hamBurger menu*/
+.hamburger {
+    display: none;
+    user-select: none;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display:none;
+        position: absolute;
+        background-color: #0d3451;
+        right: 0;
+        left: 0;
+        text-align: center;
+    }
+    .menu li:hover {
+        display: inline-block;
+        transition: 0.3s ease;
+        background-color: white;
+        color: #0d3451;
+    }
+    .menu li + li {
+        padding: 12px;
+    }
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+    }
+    .hamburger {
+        display: block;
+    }
+}
