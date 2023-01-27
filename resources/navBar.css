@@ -10,9 +10,6 @@
     top: 0px;
     z-index: 100;
 }
-.nav-links a {
-    color: white;
-}
     
     /* logo */
     .logo {
@@ -28,16 +25,13 @@
         font-weight:500;
     }
     .menu li:hover {
-         background-color: white;
-        color: #0d3451;
-        transition: 0.1s ease;
-    }
-    .menu li > a:hover {
+        background-color: white;
         color: #0d3451;
     }
     .menu li {
         padding: 5px 14px;
         list-style: none;
+        color: white;
     }
     
 /*responsive navBar menu*/
