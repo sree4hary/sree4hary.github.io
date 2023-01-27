@@ -1,20 +1,3 @@
-/* common style to all sections */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    font-family: "Segoe UI", Arial, sans-serif;
-}
-a {
-    text-decoration: none;
-}
-li {
-    list-style: none;
-}
-
 /* navBar styling */
 .navbar {
     display: flex;
@@ -54,7 +37,7 @@ li {
     }
     .menu li {
         padding: 5px 14px;
-        /* color: #fff; */
+        list-style: none;
     }
     
 /*responsive navBar menu*/
