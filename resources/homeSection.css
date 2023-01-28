@@ -1,16 +1,17 @@
-/* /////////////////////////////////////// */
+
 #home{
   display: flex;
   flex-direction: row;
   text-align: left;
   width: 80%;
   margin: auto;
-  border:  solid 1px black;
+  padding: 3%;
+  box-shadow:  rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 #imgFrame {
-  /* border: solid 1px black; */
   padding: 10px;
-  max-width: 250px;
+  max-width: 200px;
+  min-width: 180px;
   flex: 10%;
   margin: auto;
   height: 100%;
@@ -27,51 +28,37 @@ color: white;
 }
 #homeDesFrame > p{
   justify-content: center;
-  text-align: center;
 }
 
 #homeDesFrame{
   flex: 70%;
-  border: solid 1px green;
+  padding: 3% 8%;
 }
 
 @media (max-width: 800px) {
-#home {
-flex-direction: column;
-
-}
-#homeDesFrame{
-  border: solid 1px green;
-  padding-left: 0%;
-  width: 100%;
-}
-}
-
-
-
-
-/* ////////////////// */
-body {
-  /* font-family: monospace; */
-  font-weight: 700;
-  font-size:50px;
-  padding:20px;
-  /* background:#005F6B; */
-  color:#00DFFC
+  #home {
+    flex-direction: column;
+    box-shadow: none;
+  }
+  #homeDesFrame > p{
+    text-align: center;
+  }
 }
 
 .type {
+  font-size:xx-large;
+  font-weight: 600;
   color:#0000;
   background:
-    linear-gradient(-90deg,#00DFFC 5px,#0000 0) 10px 0,
-    linear-gradient(#00DFFC 0 0) 0 0;
+    linear-gradient(-90deg,#0d3451 5px,#0000 0) 10px 0,
+    linear-gradient(#0d3451 0 0) 0 0;
   background-size:calc(var(--n)*1ch) 200%;
   -webkit-background-clip:padding-box,text;
   background-clip:padding-box,text;
   background-repeat:no-repeat;
   animation: 
    b .7s infinite steps(1),   
-   t calc(var(--n)*.3s) steps(var(--n)) forwards;
+   t calc(var(--n)*.1s) steps(var(--n)) forwards;
 }
 
 @keyframes t{
