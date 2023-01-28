@@ -4,9 +4,43 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="/e-portfolio/sree4hary.github.io/resources/common.css">
-<link rel="stylesheet" href="resources/aboutSection.css">
+<link rel="stylesheet" href="/e-portfolio/sree4hary.github.io/resources/navBar.css" />
+<link rel="stylesheet" href="/e-portfolio/sree4hary.github.io/resources/homeSection.css">
+<script src="/e-portfolio/sree4hary.github.io/resources/aboutSection.js"></script> 
+<link rel="stylesheet" href="/e-portfolio/sree4hary.github.io/aboutSection.css">
 </head>
-<body>
+<body onload="typeWriter()">
+
+  <!-- navBar  -->
+  <nav class="navbar">
+    <!-- logo -->
+    <div class="logo">SREEHARI SURABIND</div>
+    <!-- navBarMenu -->
+    <ul class="nav-links">
+      <!-- hamBurgerButton -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      <!-- navMenu -->
+      <div class="menu">
+        <li><a href="/">HOME</a></li>
+        <li><a href="/">ABOUT</a></li>
+        <li><a href="/">SKILLS</a></li>
+        <li><a href="/">PROJECTS</a></li>
+        <li><a href="https://drive.google.com/file/d/1oj_FRgvvoaExOHmhLNweVSQtZyp_gXLN/view?usp=share_link">RESUME</a></li>
+      </div>
+    </ul>
+  </nav>
+
+    <div id="home">
+      <div id="imgFrame"><img src="/e-portfolio/sree4hary.github.io/resources/sreehari_profile_pic.jpg" id="profilePic"></div>
+      <div id="homeDesFrame">
+          <p>
+          <span class="type" style="--n:53">Hey, there! <br>
+            I'm Sreehari Surabind.<br>
+            I'm an Aspiring Java Developer.</span>
+          </p>
+      </div>
+    </div><br>
 
 <div id="abtMe">
   <h2>About Me</h2>
@@ -18,5 +52,6 @@
   </div>
 </div><br>
 
-</body>
+    
+  </body>
 </html>
