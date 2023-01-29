@@ -1,9 +1,16 @@
 .footer {
-   left: 0;
-   bottom: 0;
    width: 100%;
    background-color: #0d3451;
    color: white;
-   text-align: center;
-   padding: 5%;
+   padding: 2%;
+   display: block;
 }
+
+.madeText {
+   display: flex;
+   justify-content: center;
+ }
+ 
+ .heart {
+   color: white;
+ }
