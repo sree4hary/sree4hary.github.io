@@ -1,0 +1,41 @@
+#skillsSection { 
+    box-shadow:  rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 80%;
+    margin: auto;
+    height: auto;
+}
+
+#skillsSliderFrame{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px;
+    flex-wrap: wrap;
+}
+
+#skillsSliderFrame > div {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    margin: 2%;
+    height: fit-content;
+    width: 10%;
+    min-width: 100px;
+}
+
+#skillsSliderFrame > div > img {
+    width: 100%;
+    padding: 10%;
+}
+
+h3 {
+    margin: 0;
+    background-color: #375c79;
+    color: white;
+    text-align: center;
+    font-size: medium;
+}
+
+@media (min-width: 1000px) {
+    #skillsSliderFrame > div {
+        width: 15%;
+    }
+}
