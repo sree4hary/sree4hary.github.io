@@ -1,0 +1,69 @@
+
+#home{
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  width: 80%;
+  margin: auto;
+  padding: 3%;
+  box-shadow:  rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#imgFrame {
+  padding: 10px;
+  max-width: 200px;
+  min-width: 180px;
+  flex: 10%;
+  margin: auto;
+  height: 100%;
+}
+#imgFrame>img {
+  width: 100%;
+  border-radius: 50%;
+}
+.subHead {
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 46%, rgba(246,251,252,1) 89%);
+padding: 5px;
+color: white;
+}
+#homeDesFrame > p{
+  justify-content: center;
+}
+
+#homeDesFrame{
+  flex: 70%;
+  padding: 3% 8%;
+}
+
+@media (max-width: 800px) {
+  #home {
+    flex-direction: column;
+    box-shadow: none;
+  }
+  #homeDesFrame > p{
+    text-align: center;
+  }
+}
+
+.type {
+  font-size:xx-large;
+  font-weight: 600;
+  color:#0000;
+  background:
+    linear-gradient(-90deg,#0d3451 5px,#0000 0) 10px 0,
+    linear-gradient(#0d3451 0 0) 0 0;
+  background-size:calc(var(--n)*1ch) 200%;
+  -webkit-background-clip:padding-box,text;
+  background-clip:padding-box,text;
+  background-repeat:no-repeat;
+  animation: 
+   b .7s infinite steps(1),   
+   t calc(var(--n)*.1s) steps(var(--n)) forwards;
+}
+
+@keyframes t{
+  from {background-size:0 200%}
+}
+@keyframes b{
+  50% {background-position:0 -100%,0 0}
+}

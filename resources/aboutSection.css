@@ -1,0 +1,23 @@
+
+h2 {
+  background-color: #0d3451;
+  color: white;
+  padding-left: 5%;
+}
+
+#abtMe {
+  box-shadow:  rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+#abtMe, h2 {
+  border-radius: 5px 5px 0px 0px;
+}
+
+#abtMeDesFrame{
+  padding: 2% 5%;
+  text-align: justify;
+  font-size: large;
+}

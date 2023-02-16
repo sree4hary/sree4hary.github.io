@@ -1,0 +1,109 @@
+#contactSection { 
+    box-shadow:  rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    height: auto;
+}
+
+#contactSectionContentFrame {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px;
+    flex-wrap: wrap;
+}
+
+#contactIds {
+    /* border: solid 1px #375c79; */
+    padding: 2%;
+    /* padding-top: 0; */
+    margin: 2%;
+    height: fit-content;
+    width: 40%;
+    /* min-width: 200px; */
+    flex-wrap: wrap;
+}
+
+#messageMe {
+    height: fit-content;
+    width: 50%;
+    /* flex-wrap: wrap; */
+}
+
+#contactIds > ul {
+    border: solid 1px rgb(180, 178, 178);
+}
+#contactIds > ul > li {
+     list-style-type: none;
+     /* border: solid 1px black; */
+     margin: 20px;
+}
+
+#contactIds > ul > li > a {
+    display: flex;
+}
+
+.contactIdIcons {
+    height: 30px;
+    padding-right: 5px;
+    /* border: solid 1px red; */
+    margin: 0px;
+    align-items: center;
+     align-content: center;
+}
+
+.contactIdText {
+    /* border: solid 1px green; */
+    align-items: center;
+     align-content: center;
+}
+
+#contactIds > h3, #messageMe > h3 {
+    font-size: larger;
+    padding: 4px;
+}
+
+    input[type=text], input[type=email], textarea {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      /* border-radius: 4px; */
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    
+    #my-form-button {
+      background-color: #256da4;
+      color: white;
+      padding: 4px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    #my-form-button:hover {
+      background-color: #0d3451
+    }
+    
+    .contactForm {
+      border: solid 1px #ccc;
+      /* background-color: #f2f2f2; */
+      padding: 20px;
+    }
+
+
+    @media (max-width: 760px) {
+        #messageMe {
+            height: fit-content;
+            width: 80%;
+        }
+
+        #contactIds {
+            width: 85%;
+            height: fit-content;
+        }
+    }
