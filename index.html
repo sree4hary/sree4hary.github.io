@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sreehari Surabind ePortfolio</title>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="/e-portfolio/sree4hary.github.io/resources/common.css">
 <link rel="stylesheet" href="/e-portfolio/sree4hary.github.io/resources/navBar.css" />
@@ -11,9 +12,11 @@
 <link rel="stylesheet" href="/e-portfolio/sree4hary.github.io/resources/footerSection.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
 <link rel="stylesheet" href="/e-portfolio/sree4hary.github.io/resources/skillsSection.css">
+<link rel="stylesheet" href="/e-portfolio/sree4hary.github.io/resources/gitStatusSection.css">
+<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+<link rel="stylesheet" href="/e-portfolio/sree4hary.github.io/resources/contactSection.css">
 </head>
-<body onload="typeWriter()">
-  <!-- oncontextmenu="return false" -->
+<body onload="typeWriter()" oncontextmenu="return false">
   <!-- navBar  -->
   <nav class="navbar">
     <!-- logo -->
@@ -25,13 +28,13 @@
       <label for="checkbox_toggle" class="hamburger">&#9776;</label>
       <!-- navMenu -->
       <div class="menu">
-        <li><a href="/">HOME</a></li>
-        <li><a href="/">ABOUT</a></li>
-        <li><a href="/">SKILLS</a></li>
-        <li><a href="/">PROJECTS</a></li>
-        <li><a href="https://drive.google.com/file/d/1oj_FRgvvoaExOHmhLNweVSQtZyp_gXLN/view?usp=share_link">RESUME</a></li>
-        <li><a href="/">GIT STATS</a></li>
-        <li><a href="/">CONTACT</a></li>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#abtMe">ABOUT</a></li>
+        <li><a href="#skillsSection">SKILLS</a></li>
+        <li><a href="">PROJECTS</a></li>
+        <li><a target="_blank" href="https://drive.google.com/file/d/1k5SxQUwiF8ZPVL8hYxk1ingoipqRXrSZ/view?usp=share_link">RESUME</a></li>
+        <li><a href="#gitStatusSection">GIT STATS</a></li>
+        <li><a href="#contactSection">CONTACT</a></li>
       </div>
     </ul>
   </nav>
@@ -71,12 +74,90 @@
     <div><img src="/e-portfolio/sree4hary.github.io/resources/logos/hibernate.png"><h3>HIBERNATE</h3></div>
     <div><img src="/e-portfolio/sree4hary.github.io/resources/logos/git.png"><h3>GIT</h3></div>
     <div><img src="/e-portfolio/sree4hary.github.io/resources/logos/aws.png"><h3>AWS</h3></div>
+    <div><img src="/e-portfolio/sree4hary.github.io/resources/logos/photoshop.png"><h3>ADOBE PHOTOSHOP</h3></div>
+    <div><img src="/e-portfolio/sree4hary.github.io/resources/logos/typing.png"><h3>TOUCH TYPING</h3></div>
+  </div>
+</div>
+
+<div id="gitStatusSection">
+  <h2>Git Stats</h2>
+  <div id="gitStatusContentsFrame">
+    <div><img  src="https://github-readme-stats.vercel.app/api?username=sree4hary&show_icons=true&include_all_commits=true&count_private=true&hide=issues,contribs&border_radius=0&locale=en&theme=white" alt="sree4hary"/></div>
+    <div><img  src="https://github-readme-stats.vercel.app/api/top-langs/?username=sree4hary&layout=compact&exclude_repo=humble-leather-6838,future-rabbits-7964,OverStock-Clone&hide=Shell&border_radius=0&theme=white" alt="sree4hary"/></div>
+  </div>
+  <div class="calendar" style="width: 90%; padding: 2%;">
+    Please wait. Loading the GitHub Calendar......Refresh the page if the content didn't load.
+  </div>
+</div>
+
+<div id="contactSection">
+
+  <h2>Contact</h2>
+  <div id="contactSectionContentFrame">
+    <div id="contactIds">
+      <h3>Get In Touch</h3>
+      <ul>
+        <li>
+          <a href="tel:+917356293921">
+          <img src="/e-portfolio/sree4hary.github.io/resources/logos/phone.png" alt="Phone" class="contactIdIcons">
+          <span class="contactIdText">+917356293921</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:sree4hary@gmail.com">
+          <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Email" class="contactIdIcons">
+           <span class="contactIdText">sree4hary@gmail.com</span>
+          </a>
+        </li>
+        <li id="gitList">
+          <a href="https://github.com/sree4hary">
+          <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" class="octicon octicon-mark-github v-align-middle contactIdIcons" id="gitHubIcon">
+            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+          </svg>
+          <span class="contactIdText">sree4hary</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://in.linkedin.com/in/sree4hary">
+          <img src="https://static.licdn.com/sc/h/8s162nmbcnfkg7a0k8nq9wwqo" class="contactIdIcons" alt="LinkedIn">
+          <span class="contactIdText">sree4hary</span>
+        </a>
+        </li>
+        <li>
+          <a href="https://t.me/sree4hary">
+          <img src="https://telegram.org/img/favicon.ico" alt="Telegram" class="contactIdIcons">
+          <span class="contactIdText">@sree4hary</span>
+        </a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="messageMe">
+      <h3>Message Me</h3>
+
+<div class="contactForm">
+  <form id="my-form" action="https://formspree.io/f/xjvdydzg" method="POST">
+        <input type="text" id="name" name="name" placeholder="Your name.." required>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+        <input type="text" id="subject" name="firstname" placeholder="Enter the Subject" required>
+        <textarea id="message" name="message" placeholder="Your message" required></textarea>
+        <button id="my-form-button">Send</button>
+        <p id="my-form-status"></p>
+  </form>
+</div>
+
+</div>
+    
   </div>
 </div>
 
 <div class="footer">
-  <div class="madeText">Made with <span class="material-symbols-outlined heart">favorite</span> by Sreehari Surabind</u></div>
+  <div class="madeText">Made by Sreehari Surabind</div>
 </div>
 
   </body>
 </html>
+
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+<script> GitHubCalendar(".calendar", "sree4hary", { responsive: true }); </script>
+<script src="/e-portfolio/sree4hary.github.io/resources/contactForm.js"></script>

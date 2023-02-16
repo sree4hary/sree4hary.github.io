@@ -2,6 +2,7 @@
     box-shadow:  rgba(149, 157, 165, 0.2) 0px 8px 24px;
     width: 80%;
     margin: auto;
+    margin-top: 30px;
     height: auto;
 }
 
@@ -18,7 +19,7 @@
     margin: 2%;
     height: fit-content;
     width: 10%;
-    min-width: 100px;
+    min-width: 80px;
 }
 
 #skillsSliderFrame > div > img {
@@ -31,11 +32,11 @@ h3 {
     background-color: #375c79;
     color: white;
     text-align: center;
-    font-size: medium;
+    font-size:small;
 }
 
 @media (min-width: 1000px) {
     #skillsSliderFrame > div {
-        width: 13%;
+        width: 11%;
     }
 }
